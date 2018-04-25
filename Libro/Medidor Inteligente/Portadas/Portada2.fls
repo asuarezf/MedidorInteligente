@@ -1,8 +1,0 @@
-PWD M:/Personal/Drive/Tesis/Libro/Medidor Inteligente/Portadas
-INPUT c:/texlive/2017/texmf.cnf
-INPUT c:/texlive/2017/texmf-dist/web2c/texmf.cnf
-INPUT c:/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT ./Portada2.tex
-OUTPUT Portada2.log
-INPUT c:/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map
-INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm

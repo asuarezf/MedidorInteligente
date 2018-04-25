@@ -1,0 +1,271 @@
+% file thesis.tex
+% Archivo thesis.tex
+% Documento maestro que incluye todos los paquetes necesarios para el documento
+% principal.
+
+
+
+\documentclass[oneside,12pt,letterpaper]{report}
+\tolerance=1000
+\hbadness=10000
+\raggedbottom
+
+% Paquetes para manejar graficos
+\usepackage{float}
+\usepackage{epsf}
+\usepackage[pdftex]{graphicx}
+\usepackage{epsfig}
+\usepackage{caption}
+\usepackage{mathpazo}
+% Simbolos matematicos
+\usepackage{latexsym,amssymb}
+% Paquetes para presentar una tesis decente.
+\usepackage{setspace,cite} % Doble espacio para texto, espacio singular para
+                           % los caption y pie de pagina
+
+% Paquetes no utilizados para citas
+\usepackage{booktabs}
+\usepackage{adjustbox}
+
+%figuras en modo cuadrado con texto a los lados
+\usepackage{wrapfig}
+\usepackage{alltt}
+
+% Acentos
+\usepackage[spanish,activeacute]{babel} %\usepackage[spanish,activeacute,es-lcroman]{babel}
+\usepackage[spanish]{translator}
+\usepackage[utf8]{inputenc}
+\usepackage{color, xcolor, colortbl}
+\usepackage{multirow}
+\usepackage{subfig}
+\usepackage[OT1]{fontenc}
+\usepackage{tocbibind}
+\usepackage{anysize}
+\usepackage{listings}
+
+% Para poder tener texto asiatico
+\usepackage{enumerate}
+% Opciones para los glosarios
+\usepackage{url}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{fancyhdr} % Necesario para los encabezados
+\usepackage{fancyvrb}
+\usepackage{makeidx} % En caso de necesitar indices.
+\usepackage{wrapfig}
+%Colocar epígrafos al principio del capítulo
+\usepackage{epigraph}
+%para el espacio de indentacion
+\usepackage{enumitem}
+%intento de incluir un pdf en los apendices
+\usepackage{pdfpages}
+%paquete de prueba para apendices
+\usepackage[toc,page]{appendix}
+%Paquete para colocar los titulos centrados
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries\centering}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+
+
+\makeindex  % Necesitado para los indices
+
+% Definiciones para definicions, teoremas y lemas
+\theoremstyle{definition} \newtheorem{definicion}{Definici\'{o}n}
+\theoremstyle{plain} \newtheorem{teorema}{Teorema}
+\theoremstyle{plain} \newtheorem{lema}{Lema}
+
+% Para la creacion de los pdfs
+\usepackage{hyperref}
+
+% Para resolver el lio del Unicode para la informacion de los PDFs
+% En pdftitle coloca el nombre de su proyecto de grado/pasantia.
+% En pdfauthor coloca su nombre.
+\hypersetup{
+    pdftitle = {Optimización de un medidor eléctrico inteligente bifásico},
+    pdfauthor={Andres Suarez Figueroa},
+		pdfsubject={Libro de tésis},
+    pdfkeywords={},
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black,
+    backref,
+    pdftex
+}
+%incluir el glosario
+\usepackage[toc,acronym]{glossaries}
+
+% Crea el glosario
+\makeglossaries
+
+%entradas a los acronimos... hay que hacer una compilacion especial que no conozco
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newacronym{lvm}{LVM}{Logical Volume Manager}
+
+%\newacronym{svm}{SVM}{support vector machine}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Incluye el glosario
+%\input{glossary.tex}
+
+% Para crear la hoja escaneada de las firmas
+\usepackage[absolute]{textpos}
+
+% Pone los nombres y las opciones para mostrar los codigos fuentes
+\lstset{language=C, breaklines=true, frame=single, showstringspaces=false,
+        showtabs=false, numbers=left, keywordstyle=\color{black},
+        basicstyle=\footnotesize, captionpos=b }
+\renewcommand{\lstlistingname}{C\'{o}digo fuente}
+\renewcommand{\lstlistlistingname}{\'{I}ndice de c\'{o}digos fuentes}
+
+% Dimensiones de la pagina
+\setlength{\headheight}{15pt}
+\marginsize{3cm}{2cm}{2cm}{2cm}
+
+% Se pueden omitir para que no compile ciertos capitulos.
+\includeonly{header, intro, ssimilar, herramienta, resultados, conclusiones}
+
+%\selectspanish*
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%      end of preamble and start of document     %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{graphicx}
+%\usepackage{subfigure}
+\usepackage{subfig}
+
+\begin{document}
+
+\pagenumbering{Roman}
+% Carátula
+\input{../Portadas/Portada.tex}
+
+%Página de título
+\input{../Portadas/Portada2.tex}
+
+% Pagina de acta final (vacio)
+%\input{acta.tex}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{4}
+
+% Define encabezado numeros romanos y como se separan los captiulos y las
+% secciones
+\addtolength{\headheight}{3pt}
+\pagestyle{fancyplain}
+
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter:\,\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\,\ #1}}
+
+\onehalfspacing
+
+\lhead{}
+\chead{}
+\rhead{}
+\renewcommand{\headrulewidth}{0.0pt}
+\lfoot{}
+\cfoot{\fancyplain{}{\thepage}}
+\rfoot{}
+
+
+% Pagina de resumen
+\input{../Portadas/Resumen.tex}
+
+% Pagina de agradecimientos (opcional)
+\input{../Agradecimientos/Agradecimientos.tex}
+
+\input{../Lista_de_acronimos/acronimos.tex}
+
+% Pagina de dedicatoria (opcional)
+%\input{Dedicatoria/Dedicatoria.tex}
+
+% Crea la tabla de contenidos
+\tableofcontents
+
+% Crea la lista de figuras
+\listoffigures
+
+% Crea la lista de cuadros
+\renewcommand{\listtablename}{Índice de tablas}\listoftables
+
+
+% Crea la lista de codigos fuentes
+%\lstlistoflistings
+
+\clearpage
+
+% Define encabezado en numeros arabicos
+\pagenumbering{arabic}
+
+\fancyhf{} % Redefine el encabezado
+\lhead{}
+\chead{}
+\rhead{\fancyplain{}{\thepage}}
+\renewcommand{\headrulewidth}{0.0pt}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+
+\doublespacing
+
+
+% Incluye los archivos deseados - El contenido de
+%su proyecto de grado.
+\input{../Introduccion/Introduccion.tex}
+%\input{Capitulos/Capitulo2.tex}
+%\input{Capitulos/Capitulo3.tex}
+%\input{Capitulos/Capitulo4.tex}
+%\input{Capitulos/Capitulo5.tex}
+%\input{Capitulos/Capitulo6.tex}
+%\input{Capitulos/Capitulo7.tex}
+%\input{Capitulos/Capitulo8.tex}
+
+% Crea el glosario
+%\printglossary%[title={Acrónimos},toctitle={Acrónimos}]
+
+% Establece las citas y bibliografia
+%\bibliographystyle{IEEEtrans}
+%\bibliographystyle{TeXiS}
+\bibliographystyle{unsrt}
+\bibliography{referencias1}
+
+% Crea el apendice
+%\renewcommand{\chaptername}{}
+%\makeatletter
+%\def\@makechapterhead#1{%
+%\vspace*{50\p@}%
+%{\parindent \z@ \raggedright \normalfont
+%%\ifnum \c@secnumdepth >\m@ne
+%%    \huge\bfseries \@chapapp\space \thechapter
+%%    \par\nobreak
+%%    \vskip 20\p@
+%%\fi
+%\interlinepenalty\@M
+%\Huge \bfseries #1\par\nobreak
+%\vskip 40\p@
+%}}
+%\makeatother
+%\renewcommand{\chaptername}{}
+%\renewcommand{\thechapter}{}
+%\begin{appendices}
+%\renewcommand{\appendixname}{Apéndice} %Lo que aparecerá en el titulo donde se ubica el apendice
+%\renewcommand{\appendixtocname}{Apéndices}%lo que aparecerá en la
+%\renewcommand{\appendixpagename}{Apéndices}
+
+%\addto{\captionsenglish}{\renewcommand{\appendix}{MyAppx}}
+%\appendix
+%\appendixpage%{Apéndice A}
+\clearpage % o \cleardoublepage
+%\addappheadtotoc
+%\appendixpage
+%\chapter{Breve documentación de Pro-Sivic}
+%\includepdf[pages={1-4}]{Apendices/Pro-SiViC_Documentation.pdf}
+%\chapter{Documentación del módulo de planificación local ``DynamicPathPlanner''}
+%\includepdf[pages={1-2}]{Apendices/RTMaps3_DynamicPathPlanner.pdf}
+%\chapter{Documentación del módulo de control ``PathController''}
+%\includepdf[pages={1-2}]{Apendices/RTMaps3_PathController.pdf}
+%\end{appendices}
+%\input{paxson.tex}
+
+\end{document}

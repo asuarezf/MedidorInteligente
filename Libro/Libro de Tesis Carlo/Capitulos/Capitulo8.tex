@@ -1,0 +1,34 @@
+%Conclusiones, Recomendaciones y Trabajos Futuros
+\chapter{Conclusiones}
+\thispagestyle{empty}
+
+En los capítulos anteriores ha sido presentado el proyecto realizado en el Equipo de \textit{Automated Driving}, grupo de inverstigación que forma parte de TECNALIA \textit{Research \& Innovation}, enfocado en las investigaciones aplicadas a la conducción autonomatizada de vehículos eléctricos.\\
+
+\par Para desarrollar el proyecto de mejor forma fue necesario el estudio y comprensión de los temas descritos en el capítulo 3, el cual inicia con la definición de varios conceptos de interés para el entendimiento de las bases sobre las cuales están basados los sistemas de comunicación hoy en día. Seguidamente, se hace una descripción completa de los sistemas de comunicación comerciales y vehiculares, detallando, los equipos que los componen, protocolos, entre otras detalles. Finalmente, se comenta sobre los C-ITS, así como de las maniobras cooperativas desarrolladas en el presente trabajo.\\
+
+\par Para complementar la información presentada, en el capítulo 4 se describieron las plataformas experimentales, y sus roles dentro del proyecto, de igual forma, se explicó la arquitectura de control empleada tanto, por los Twizy, como por el simulador Dynacar, la cual se ecuentra compuesta por 6 bloques, adquisición, percepción, decisión, comunicación, control y actuación.\\
+
+\par Posteriormente, se presenta el sistema de comunicación implementado, argumentando el uso de elementos comerciales, seguido de la implementación del mismo, en Dynacar, así como las pruebas a distintas tasas de envío, llegando al resultado de 5 ms, para usarse en el simulador, y 10 ms (comunicación unidireccional) o 50 ms (comunicación bidireccional) para usarse en los vehículos.\\
+
+\par Finalmente, se presentaron las maniobras cooperativas realizadas, ACC, Control Lateral, \textit{Stop and Go} y ACC con Control Lateral, describiendo los controladores empleados, así como las distintas pruebas de desempeño. Una vez probado y analizado, se procedió a efectuar los ensayos de las maniobras con el sistema de comunicación en los distintos entornos, PC - PC, V2V, Vehículo - PC, siendo estos los resultados finales del proyecto, a partir de los cuales se llega a las siguientes conclusiones:
+    
+\begin{itemize}
+
+\item Efectivamente, se puede asemejar un sistema de comunicación vehicular, con uno comercial, tomando ciertas consideraciones, como lo son, el bajo tráfico de vehículos, y que los carros partan de una misma red, en la cual ya todos se reconocen y el envío de mensajes se pueda realizar de forma directa. Envío, que por la necesidad de ejecutarse de forma rápida, y robusta ante posibles desconexiones se hace mediante el protocolo de transporte UDP. 
+
+\item Debido a la necesidad de sincronía de Simulink, establecer una tasa de envío, que permita una comunicación efectiva, así como un buen rendimiento del simulador, puede llegar a ser complicado, sin embargo, se encontró en una tasa 5 veces mayor al tiempo de muestreo de Dynacar, un valor más que aceptable para cumplir todos los objetivos planteados.  
+
+\item Los controladores difusos son una buena herramienta para trabajar sistemas, de forma empírica, lo que permite que los escenarios de control sean implementados de manera más exacta, sin necesidad de un modelo matemático que describa su comportamiento, como es observado con los controladores realizados para las maniobras, los cuales  mostraron un buen desempeño, en cada una de ellas, presentando un bajo error y un rápido tiempo de establecimiento.     
+
+\item Con la implementación del sistema de comunicación en los distintos escenarios, se demostraron varias formas válidas de realizar distintas pruebas de maniobras cooperativas, las cuales aportan facilidad, fiabilidad y seguridad a la hora de desarrollarlas y ponerlas en práctica. Donde se puede resaltar el escenario de Vehículo - PC, que presenta una combinación de los vehículos reales y virtuales, permitiendo un mayor horizonte de pruebas.    
+\end{itemize}
+
+\section {Trabajos Futuros}
+
+Para trabajos futuros se plantea la extensión de la cantidad de vehículos que se puedan comunicar, con un mínimo de 4 carros (2 reales y 2 virtuales), con los cuales se puedan realizar un mayor número de maniobras, que además requiran mayor complejidad, como por ejemplo la situación de toma de desiciones en una redoma. De la misma forma, se planea extender la cantidad de vehículos observables en el Visor 3D.\\  
+
+\par Por otro lado, se planea la incorporaración de un sistema de comuniación vehícular, empleando todos sus protocolos y módulos, lo cual permitirá una expansión aún mayor, así como una conexión más efectiva, robusta y fiable, que además, permita el intercambio de data con infraestructuras.\\
+
+\par De igual forma, se contempla la mejora y optimización de los controladores propuestos, así como, el desarrollo, e implementación de otros, que permitan más maniobras. Además, para cumplir con los estándares oficiales de la comunicación entre vehículos se utilizarán equipos y protocolos como DENM y CAM para adaptar las normas de comunicación disponibles al día de hoy dentro de la arquitectura de control planteada. Lo cual permita, mayor compatibilidad y robustes, que de paso a la mejora de las maniobras cooperativas.   
+
+ se contempla la mejora y otimización de los controladores propuestos, así como, el desarrollo, e implementación de otros, que permitan más maniobras. Los cuales se pueden complementar, con la inserción de los mensajes de tipo DENM, los cuales ayudarán con el manejo de distintas situaciones, que puedan llegar a ser simuladas, como los problemas presentados por accidentes.  

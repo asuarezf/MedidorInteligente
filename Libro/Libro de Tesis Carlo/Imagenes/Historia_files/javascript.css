@@ -1,8 +1,0 @@
-html {
-	overflow-y: scroll;
-}
-
-#menu_ppal ul ul {
-	position: absolute;
-	left: -10000px;
-	}

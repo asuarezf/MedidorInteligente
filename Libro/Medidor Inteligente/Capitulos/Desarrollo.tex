@@ -1,0 +1,42 @@
+\chapter{Desarrollo}\label{sec:capitulo3}
+\thispagestyle{empty}
+
+\begingroup
+\rightskip0.5cm
+\small
+
+\endgroup
+
+\section{Estableciendo parametros de muestreo}
+
+\section{Eleccion de dispositivo para procesamiento}
+\par Se evaluaron unidades de procesamiento de distintas compañias y los
+disponibles en el laboratorio del grupo de Sistemas Industriales y Electrónica
+de Potencia capaces de realizar las funciones del MEI. Por parte de la empresa
+Texas Instruments los dispositivos TMS320F28027 y TMS320F28069 pertenecientes
+a la familia C2000 - Piccolo, de la empresa National Instruments el myRIO-1900
+y por último de la familia Intel el Arduino UNO.
+
+Las caracteristicas evaluadas de cada microcontrolador son las siguientes:
+\begin{\begin{itemize}
+  \item Velocidad de adquisición
+  \item Resolución de ADC
+  \item Velocidad de procesamiento
+  \item Conectividad
+  \item Acceso directo a memoria
+\end{itemize}}
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{ccccc}
+\hline
+\textbf{Dispositivo}       & \textbf{Arduino Uno} & \textbf{myRIO-1900} & \textbf{TMS320F28027}      & \textbf{TMS320F28069} \\ \hline
+Velocidad de adquisición   & 8950 Hz              & 40 KHz              & 3.4 MHz                    & 4.6 MHz               \\
+Resolución ADC             & 10                   & 12                  & 12 Bits                    & 12 Bits               \\
+Velocidad de procesamiento & 16 MHz               & 667 MHz             & \multicolumn{1}{r}{60 MHz} & 90 MHz                \\
+Conectividad               & Serial               & Serial / Wifi       & Serial                     & Serial                \\
+Acceso directo a memoria   &                      &                     &                            &                       \\ \hline
+\end{tabular}
+\end{table}

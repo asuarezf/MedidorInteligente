@@ -18,25 +18,63 @@ a la familia C2000 - Piccolo, de la empresa National Instruments el myRIO-1900
 y por último de la familia Intel el Arduino UNO.
 
 Las caracteristicas evaluadas de cada microcontrolador son las siguientes:
-\begin{\begin{itemize}
+\begin{itemize}
   \item Velocidad de adquisición
   \item Resolución de ADC
   \item Velocidad de procesamiento
   \item Conectividad
   \item Acceso directo a memoria
-\end{itemize}}
+\end{itemize}
 
-\begin{table}[]
+\begin{table}[!h]
 \centering
-\caption{My caption}
-\label{my-label}
+\caption{Especificaciones de los dispositivos comerciales evaluados}
+\label{Especificaciones de los dispositivos comerciales evaluados}
 \begin{tabular}{ccccc}
 \hline
-\textbf{Dispositivo}       & \textbf{Arduino Uno} & \textbf{myRIO-1900} & \textbf{TMS320F28027}      & \textbf{TMS320F28069} \\ \hline
-Velocidad de adquisición   & 8950 Hz              & 40 KHz              & 3.4 MHz                    & 4.6 MHz               \\
-Resolución ADC             & 10                   & 12                  & 12 Bits                    & 12 Bits               \\
-Velocidad de procesamiento & 16 MHz               & 667 MHz             & \multicolumn{1}{r}{60 MHz} & 90 MHz                \\
-Conectividad               & Serial               & Serial / Wifi       & Serial                     & Serial                \\
-Acceso directo a memoria   &                      &                     &                            &                       \\ \hline
+\textbf{Dispositivo} & \textbf{Arduino Uno} & \textbf{myRIO-1900} & \textbf{TMS320F28027} & \textbf{TMS320F28069} \\ \hline
+\begin{tabular}[c]{@{}c@{}}Frecuencia de \\ muestreo\end{tabular} & 8950 Hz & 40 KHz & 3.4 MHz & 4.6 MHz \\
+\begin{tabular}[c]{@{}c@{}}Velocidad de\\ procesamiento\end{tabular} & 16 MHz & 667 MHz & 60 MHz & 90 MHz \\
+Conectividad & Serial & Serial / Wifi & Serial & Serial \\
+\begin{tabular}[c]{@{}c@{}}Acceso directo \\ a memoria\end{tabular} & No & Si & Si & Si \\ \hline
 \end{tabular}
 \end{table}
+
+\subsection{Frecuencia de muestreo}
+\par Los estandares internaciones (averiguar que estandar) de la IEC establecen
+que los medidores inteligentes de clase B, los utilizados en las zonas residenciales,
+deben detectar al menos hasta el 51avo armónico. La frecuencia de la señal a medir es de 60 Hz, la
+correspondiente a la red eléctrica en Venezuela, ubicando el 51avo armónico a una frecuencia de
+3060 Hz. Según el teorema de Nyquist se requiere una frecuencia de muestreo de al menos el doble
+de dicha frecuencia, 6080 Hz.
+\par Los ADC de todos los dispositivos se encuentran multiplexados, lo que implica que
+la frecuencia de muestreo se dividira por el numero de señales a obtener. En este caso
+se utilizaran dos canales, en uno se obtendra la señal de voltaje y en el otro la de
+corriente. Duplicando asi la frecuencia de muestreo necesaria para muestrear la señal,
+12.16 KHz.
+
+\subsection{Velocidad de procesamiento y acceso directo a memoria}
+\par Al ser un sistema embebido y en tiempo real, es necesario que el dispositivo
+sea capaz de realizar grandes cantidades de instrucciones y ejecuciones en paralelo.
+Por otro lado los dispositivos que posea acceso directo a memoria son mas capaces de
+realizar operaciones debido a que este acceso es capaz de trabajar en paralelo con
+el procesamiento de los datos (ARREGLAR).
+
+\subsection{Comunicación}
+\par Siguiendo los estandares (averiguar estandar) para la comunicacion de los
+medidores inteligentes, se recomienda que el dispostivo sea capaz de conectarse a una
+red y enviar datos mediante el protocolo TCP/IP. \\
+
+Teniendo en cuenta todo esto tomamos como parametro mas importante la frecuencia de
+muestreo, descartando de este modo al dispositivo Arduino Uno que solo posee una
+máxima frecuencia de 8950 Hz con un canal. Los dispositivos restantes cumplen con
+sosobra la frecuencia de muestreo minima necesaria, teniendo que tomar en cuenta los
+siguientes aspectos. La velocidad de proceseamiento en los tres dispositivos es
+sumamente elevada y ademas de esto cuentan con la capacidad de acceso directo a
+memoria dando un uso mas optimizado de sus recursos. Sin embargo por la parte de
+comunicacion los dispositivos de Texas Instruments requieren de modulos extras
+para obtener conexión WIFI y poder transmitir los datos por el protocolo TCP/IP,
+dejando asi en ventaja al dispositivo myRIO. De tal modo se eligio el dispositivo 
+myRIO ya que cumple con todas las caracteristicas necesarias y este ya se encuentra
+disponible en los laboratorios de la agrupación al contrario de los TI que es necesario
+realizar su compra.

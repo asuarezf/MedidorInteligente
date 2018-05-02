@@ -1,6 +1,0 @@
-PWD M:/Personal/Drive/Tesis/Libro/Medidor Inteligente/Capitulos
-INPUT c:/texlive/2017/texmf.cnf
-INPUT c:/texlive/2017/texmf-dist/web2c/texmf.cnf
-INPUT c:/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT ./Marco_teorico.tex
-OUTPUT Marco_teorico.log

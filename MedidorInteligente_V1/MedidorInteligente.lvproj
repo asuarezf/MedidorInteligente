@@ -19,6 +19,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="SolicitarDatos.vi" Type="VI" URL="../SolicitarDatos.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -1570,7 +1571,7 @@ AddOutputFilter chunkFilter
 					<Property Name="Memory Type" Type="UInt">2</Property>
 					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
 					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
-					<Property Name="Requested Number of Elements" Type="UInt">1200</Property>
+					<Property Name="Requested Number of Elements" Type="UInt">1440</Property>
 					<Property Name="Type" Type="UInt">2</Property>
 					<Property Name="Type Descriptor" Type="Str">1000800000000001003C005F0311001000000010000000010000000100000000000000000000001000000010000000000000FFFF0000000100000001000000000000000100010000000000000000000000000000</Property>
 				</Item>
@@ -1591,7 +1592,7 @@ AddOutputFilter chunkFilter
 					<Property Name="Memory Type" Type="UInt">2</Property>
 					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
 					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
-					<Property Name="Requested Number of Elements" Type="UInt">1200</Property>
+					<Property Name="Requested Number of Elements" Type="UInt">1440</Property>
 					<Property Name="Type" Type="UInt">2</Property>
 					<Property Name="Type Descriptor" Type="Str">1000800000000001003C005F0311001000000010000000010000000100000000000000000000001000000010000000000000FFFF0000000100000001000000000000000100010000000000000000000000000000</Property>
 				</Item>
@@ -1650,6 +1651,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Procesamiento.vi" Type="VI" URL="../Procesamiento.vi"/>
 		<Item Name="CalculosParametros.vi" Type="VI" URL="../CalculosParametros.vi"/>
 		<Item Name="AlmacenamientoDatos.vi" Type="VI" URL="../AlmacenamientoDatos.vi"/>
+		<Item Name="EnvioDatos.vi" Type="VI" URL="../EnvioDatos.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Dynamic To Waveform Array.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Dynamic To Waveform Array.vi"/>

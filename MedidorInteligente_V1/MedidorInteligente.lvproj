@@ -1571,7 +1571,7 @@ AddOutputFilter chunkFilter
 					<Property Name="Memory Type" Type="UInt">2</Property>
 					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
 					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
-					<Property Name="Requested Number of Elements" Type="UInt">1440</Property>
+					<Property Name="Requested Number of Elements" Type="UInt">1200</Property>
 					<Property Name="Type" Type="UInt">2</Property>
 					<Property Name="Type Descriptor" Type="Str">1000800000000001003C005F0311001000000010000000010000000100000000000000000000001000000010000000000000FFFF0000000100000001000000000000000100010000000000000000000000000000</Property>
 				</Item>
@@ -1592,7 +1592,7 @@ AddOutputFilter chunkFilter
 					<Property Name="Memory Type" Type="UInt">2</Property>
 					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
 					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
-					<Property Name="Requested Number of Elements" Type="UInt">1440</Property>
+					<Property Name="Requested Number of Elements" Type="UInt">1200</Property>
 					<Property Name="Type" Type="UInt">2</Property>
 					<Property Name="Type Descriptor" Type="Str">1000800000000001003C005F0311001000000010000000010000000100000000000000000000001000000010000000000000FFFF0000000100000001000000000000000100010000000000000000000000000000</Property>
 				</Item>
@@ -1698,6 +1698,9 @@ AddOutputFilter chunkFilter
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

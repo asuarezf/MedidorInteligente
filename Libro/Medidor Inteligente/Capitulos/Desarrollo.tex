@@ -10,43 +10,43 @@
 \section{Estableciendo parámetros a medir}%-------------------------------------
   \par Como ya se mencionaron antes los estandares internacionales establecen:
   \begin{itemize}
-    \item Valores nominales de la red eléctrica
-    \item Espcificaciones de los medidores inteligentes
-      \begin{itemize}
-        \item Eléctricas
-        \item Medición (BUSCAR OTRO TERMINO)
-      \end{itemize}
+   \item Valores nominales de la red eléctrica
+   \item Espcificaciones de los medidores inteligentes
+         \begin{itemize}
+          \item Eléctricas
+          \item Medición (BUSCAR OTRO TERMINO)
+         \end{itemize}
   \end{itemize}
 
   \subsection{Eléctricas}
-    \par La norma EDC E-354-1608 establece los valores nominales de la red eléctrica,
-    los cuales deben ser medidos por el medidor inteligente.
+  \par La norma EDC E-354-1608 establece los valores nominales de la red eléctrica,
+  los cuales deben ser medidos por el medidor inteligente.
 
-    \begin{table}[H]
-    \centering
-    \caption{\label{Valores_nominales_re}Valores nominales de operacion de la red eléctrica, extracto norma E-354-D-1608}
-    \resizebox{\textwidth}{!}{
+  \begin{table}[H]
+   \centering
+   \caption{\label{Valores_nominales_re}Valores nominales de operacion de la red eléctrica, extracto norma E-354-D-1608}
+   \resizebox{\textwidth}{!}{
     \begin{tabular}{cccc}
-    \hline
-    \textbf{\begin{tabular}[c]{@{}c@{}}Característica\\ Medidor\end{tabular}} & \multicolumn{3}{c}{\textbf{Medición Eléctrica}} \\ \hline
-    Tipo & 1F, 2 Hilos & 1F, 3 Hilos & 3F, 4 Hilos \\
-    Rango de intensidad (A) & 10-60 & 15-80 & 15-100 \\
-    Tensión nominal (V) & 120 & \begin{tabular}[c]{@{}c@{}}2 x 120/240\\ 2 x 240/480\end{tabular} & \begin{tabular}[c]{@{}c@{}}3 x 208Y/120\\ 3 x 240/2 x 120\\ 3 x 416Y/240\\ 3 x 480Y/277\end{tabular} \\
-    Rigidez dielectrica?? (KV) & 4 & 4 & 4 \\
-    Frecuencia (Hz) & 60 & 60 & 60 \\ \hline
+     \hline
+     \textbf{\begin{tabular}[c]{@{}c@{}}Característica\\ Medidor\end{tabular}} & \multicolumn{3}{c}{\textbf{Medición Eléctrica}}                                                         \\ \hline
+     Tipo                               & 1F, 2 Hilos                                     & 1F, 3 Hilos               & 3F, 4 Hilos               \\
+     Rango de intensidad (A)            & 10-60                                           & 15-80                     & 15-100                    \\
+     Tensión nominal (V)                & 120                                             & \begin{tabular}[c]{@{}c@{}}2 x 120/240\\ 2 x 240/480\end{tabular} & \begin{tabular}[c]{@{}c@{}}3 x 208Y/120\\ 3 x 240/2 x 120\\ 3 x 416Y/240\\ 3 x 480Y/277\end{tabular} \\
+     Rigidez dielectrica?? (KV)         & 4                                               & 4                         & 4                         \\
+     Frecuencia (Hz)                    & 60                                              & 60                        & 60                        \\ \hline
     \end{tabular}}
-    \end{table}
+  \end{table}
 
-    \par La tabla \ref{Valores_nominales_re} es un estracto de la norma ya mencionada en
-     de la cual determinamos los valores en el cual operan los medidores inteligentes;
-     frecuencia de 60 Hz, 120 V nominales y corriente entre 10-60 A.
+  \par La tabla \ref{Valores_nominales_re} es un estracto de la norma ya mencionada en
+  de la cual determinamos los valores en el cual operan los medidores inteligentes;
+  frecuencia de 60 Hz, 120 V nominales y corriente entre 10-60 A.
 
   \subsection{Medición}
 
-    La norma IEC 61000-4-30 especifica que los medidores de clase B deben ser capaces
-     de medir hasta el 30avo armónico.
+  La norma IEC 61000-4-30 especifica que los medidores de clase B deben ser capaces
+  de medir hasta el 30avo armónico.
 
-    \textbf{NORMA QUE ESTABLECE LOS ERRORES PORCENTUALES PERMITIDOS}
+  \textbf{NORMA QUE ESTABLECE LOS ERRORES PORCENTUALES PERMITIDOS}
 
 \section{Tarjeta de acondicionamiento}%-----------------------------------------
 
@@ -61,24 +61,24 @@
 
   Las caracteristicas evaluadas de cada microcontrolador son las siguientes:
   \begin{itemize}
-    \item Velocidad de adquisición
-    \item Resolución de ADC
-    \item Velocidad de procesamiento
-    \item Conectividad
-    \item Acceso directo a memoria
+   \item Velocidad de adquisición
+   \item Resolución de ADC
+   \item Velocidad de procesamiento
+   \item Conectividad
+   \item Acceso directo a memoria
   \end{itemize}
 
   \begin{table}[H]
-  \centering
-  \caption{\label{Especificaciones_dispositivos_comerciales_evaluados}Especificaciones de los dispositivos comerciales evaluados}
-  \resizebox{\textwidth}{!}{\begin{tabular}{ccccc}
-  \hline
-  \textbf{Dispositivo} & \textbf{Arduino Uno} & \textbf{myRIO-1900} & \textbf{TMS320F28027} & \textbf{TMS320F28069} \\ \hline
-  \begin{tabular}[c]{@{}c@{}}Frecuencia de \\ muestreo\end{tabular} & 8950 Hz & 40 KHz & 3.4 MHz & 4.6 MHz \\
-  \begin{tabular}[c]{@{}c@{}}Velocidad de\\ procesamiento\end{tabular} & 16 MHz & 667 MHz & 60 MHz & 90 MHz \\
-  Conectividad & Serial & Serial / Wifi & Serial & Serial \\
-  \begin{tabular}[c]{@{}c@{}}Acceso directo \\ a memoria\end{tabular} & No & Si & Si & Si \\ \hline
-  \end{tabular}}
+   \centering
+   \caption{\label{Especificaciones_dispositivos_comerciales_evaluados}Especificaciones de los dispositivos comerciales evaluados}
+   \resizebox{\textwidth}{!}{\begin{tabular}{ccccc}
+     \hline
+     \textbf{Dispositivo}      & \textbf{Arduino Uno} & \textbf{myRIO-1900} & \textbf{TMS320F28027} & \textbf{TMS320F28069} \\ \hline
+     \begin{tabular}[c]{@{}c@{}}Frecuencia de \\ muestreo\end{tabular} & 8950 Hz              & 40 KHz              & 3.4 MHz               & 4.6 MHz               \\
+     \begin{tabular}[c]{@{}c@{}}Velocidad de\\ procesamiento\end{tabular} & 16 MHz               & 667 MHz             & 60 MHz                & 90 MHz                \\
+     Conectividad              & Serial               & Serial / Wifi       & Serial                & Serial                \\
+     \begin{tabular}[c]{@{}c@{}}Acceso directo \\ a memoria\end{tabular} & No                   & Si                  & Si                    & Si                    \\ \hline
+    \end{tabular}}
   \end{table}
 
   \subsection{Frecuencia de muestreo (MODIFICAR ARMONICO)}
@@ -121,10 +121,65 @@
   realizar su compra.
 
 \section{Programación}
+  \par En la sección anterior se describio el proceso de acondicionamiento de la señal, de tal modo que la señal a digitalizar se encuentre en el rango de entrada del ADC del dispositivo myRIO. Al poseer la señal digitalizada se procede a realizar el procesamiento de los datos para obtener los parametros electricos deseados.
+
+  \par (EXPLICAR COMO SE PUEDE PROGRAMAR EL FPGA Y EL MYRIO) El dispositivo myRIO se programa mediante el software de desarrollo grafico Labview. Para llevar acabo el procesamiento de datos se establecieron modulos con funciones especificas con el fin de realizar una programación mas ordenada y eficiente. Estos modulos son:
+
+  \begin{itemize}
+    \item FPGA
+    \item myRIO - Sistema Operativo
+    \item PC - Host
+  \end{itemize}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{../Imagenes/estructura_procesamiento.png}
+    \caption{Hardware utilizado para el procesamiento (AGREGAR HOST)}
+    \label{fig:Hardware_Pro}
+  \end{figure}s
+
   \subsection{FPGA}
-    \subsubsection{Adquisición}
+    \par En este modulo se define la frecuencia de muestreo a utilizar. Se desea detectar el armónico 50 de la señal de 60Hz, por lo tanto la frecuencia de muestreo mínima a utilizar según el teorema de Nyquist sera de 6KHz, agregando a esto la utilización de un ADC multiplexado es necesario duplicar esta frecuencia para lograr obtener la medición de dos canales, voltaje y corriente. Por lo tanto estableceremos como mínimo una frecuencia de 12KHz, implicando asi que la cantida de muestras pertinentes a un periodo de la señal a obtener seran de 200 muestras.
+
+    \par El algoritmo de adquisición de los datos es el siguiente:
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.4\textwidth]{../Imagenes/Algoritmo_FPGA.png}
+        \caption{Algoritmo FPGA}
+        \label{fig:Algo_FPGA}
+    \end{figure}
+
+    \par El programa estara estructurada por una estructura while loop y un flat sequence. Esta última establecerá primeramente el tiempo de muestreo, el cual es el inverso a la frecuencia de muestro mencionada anteriormente, 83.34us, sin embargo el tiempo de muestreo en el modulo debe ser un numero entero por lo cual se redondea este a 83us. En la siguiente secuencia se adquiriran los datos del puerto ADC y se almacenaran en la memoria directa de estructura tipo FIFO. En la figura \ref{fig:DB_FPGA} se encuentra el diagrama de bloques del programa, este no cuenta con un panel frontal debido a que no es necesario establecer o visualizar valores en este modulo.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.4\textwidth]{programa_FPGA.png}
+        \caption{Diagrama de bloques del FPGA}
+        \label{fig:DB_FPGA}
+    \end{figure}
+
   \subsection{myRIO}
+    \par En este modulo se llevara acabo el procesamiento de los datos el cual involucra el cálculo de los parámetros, almacenamiento y la comunicacion con el dispositivo recolector, creando un VI respectivo para cada tarea.
     \subsubsection{Procesamiento}
+      \par Lo primero a realizar en este VI es la inicializacion de los elementos a utilizar: modulo FPGA, Buffer de salida de la memoria directa, constantes. Lo siguiente a esto es un algoritmo que pose como estructura productor-consumidor.
+      \subsubsubsection*{Productor}
+        \par En esta sección se extraera de la memoria de acceso directo y se depositara en una cola, la cantidad de muestras respectivas a 6 periodos, 1200 muestras, de tal modo que esta no exceda su capacidad de almacenamiento.
+
+        \par El tipo de datos extraido de la memoria se encontrara en forma vectorial, en la figura (REFERENCIA) se logra observar esta.
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.4\textwidth]{../Imagenes/estructura_datos.png}
+            \caption{Estructura de datos}
+            \label{fig:Est_dat}
+        \end{figure}
+
+      \subsubsubsection*{Consumidor}
+        \par Como es conocido por el algoritmo el consumidor debera extraer datos para su utilización, según el estandar (REFERENCIA) la cantidad de datos respectivos a 12 periodos es necesaria para realizar el procesamiento apropiadao de la data. Los datos extraidos se concatenaran para obtener un vector con las dimensiones 2x1200.
+
+        \par Aqui se realizará el cálculo de los parametros electricos y su almacenamiento
+
+      \subsubsubsection{Calculo de parametros}
+
+
     \subsubsection{Almacenamiento}
     \subsubsection{Comunicación}
   \subsection{Host}

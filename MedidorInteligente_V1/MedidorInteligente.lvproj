@@ -112,6 +112,7 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">myRIO-1900/Clk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSMYRIO_1900FPGA_TARGET_FAMILYZYNQTARGET_TYPEFPGA</Property>
 				<Property Name="NI.LV.FPGA.Version" Type="Int">6</Property>
 				<Property Name="NI.SortType" Type="Int">3</Property>
+				<Property Name="niFpga_TopLevelVIID" Type="Path">/C/Users/SmartCitiesGroup/Documents/GitHub/MedidorInteligente/MedidorInteligente_V1/FPGA.vi</Property>
 				<Property Name="Resource Name" Type="Str">RIO0</Property>
 				<Property Name="Target Class" Type="Str">myRIO-1900</Property>
 				<Property Name="Top-Level Timing Source" Type="Str">40 MHz Onboard Clock</Property>
@@ -1570,7 +1571,7 @@ AddOutputFilter chunkFilter
 					<Property Name="Memory Type" Type="UInt">2</Property>
 					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
 					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
-					<Property Name="Requested Number of Elements" Type="UInt">1600</Property>
+					<Property Name="Requested Number of Elements" Type="UInt">1200</Property>
 					<Property Name="Type" Type="UInt">2</Property>
 					<Property Name="Type Descriptor" Type="Str">1000800000000001003C005F0311001000000010000000010000000100000000000000000000001000000010000000000000FFFF0000000100000001000000000000000100010000000000000000000000000000</Property>
 				</Item>
@@ -1591,7 +1592,7 @@ AddOutputFilter chunkFilter
 					<Property Name="Memory Type" Type="UInt">2</Property>
 					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
 					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
-					<Property Name="Requested Number of Elements" Type="UInt">1600</Property>
+					<Property Name="Requested Number of Elements" Type="UInt">1200</Property>
 					<Property Name="Type" Type="UInt">2</Property>
 					<Property Name="Type Descriptor" Type="Str">1000800000000001003C005F0311001000000010000000010000000100000000000000000000001000000010000000000000FFFF0000000100000001000000000000000100010000000000000000000000000000</Property>
 				</Item>

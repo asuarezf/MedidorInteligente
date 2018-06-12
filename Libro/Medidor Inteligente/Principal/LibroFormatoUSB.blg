@@ -1,0 +1,16 @@
+[0] Config.pm:302> INFO - This is Biber 2.10
+[0] Config.pm:305> INFO - Logfile is 'LibroFormatoUSB.blg'
+[58] biber-MSWIN32:313> INFO - === 
+[114] Biber.pm:371> INFO - Reading 'LibroFormatoUSB.bcf'
+[291] Biber.pm:857> INFO - Found 1 citekeys in bib section 0
+[322] Biber.pm:3976> INFO - Processing section 0
+[350] Biber.pm:4136> INFO - Looking for bibtex format file 'REF.bib' for section 0
+[358] bibtex.pm:1490> INFO - LaTeX decoding ...
+[397] bibtex.pm:1306> INFO - Found BibTeX data source 'REF.bib'
+[400] Utils.pm:193> WARN - I didn't find a database entry for 'cernuschi2005cuatro' (section 0)
+[421] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[421] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[422] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'es-ES'
+[422] bbl.pm:617> INFO - Writing 'LibroFormatoUSB.bbl' with encoding 'UTF-8'
+[423] bbl.pm:720> INFO - Output to LibroFormatoUSB.bbl
+[424] Biber.pm:110> INFO - WARNINGS: 1

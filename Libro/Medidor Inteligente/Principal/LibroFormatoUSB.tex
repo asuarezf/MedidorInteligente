@@ -56,6 +56,9 @@
 \usepackage{epigraph}
 %para el espacio de indentacion
 \usepackage{enumitem}
+%Para cargar la bibliografia
+\usepackage{biblatex}
+\addbibresource{REF.bib}
 \usepackage{pdfpages}
 %paquete de prueba para apendices
 \usepackage[toc,page]{appendix}
@@ -204,18 +207,20 @@
 
 % Incluye los archivos deseados - El contenido de
 %su proyecto de grado.
-%\input{../Introduccion/Introduccion.tex}
-%\input{../Capitulos/Marco_Teorico.tex}
+\input{../Introduccion/Introduccion.tex}
+\input{../Capitulos/Marco_Teorico.tex}
 \input{../Capitulos/Desarrollo.tex}
-%\input{../Capitulos/Resultados.tex}
-%\input{../Capitulos/Conclusiones.tex}
+\input{../Capitulos/Resultados.tex}
+\input{../Capitulos/Conclusiones.tex}
 % Crea el glosario
 %\printglossary%[title={Acrónimos},toctitle={Acrónimos}]
 
 % Establece las citas y bibliografia
+%\bibliographystyle{IEEEtrans}
+%\bibliographystyle{TeXiS}
 %\bibliographystyle{unsrt}
-\bibliography{LibroRef}
-
+%\bibliography{REF}{}
+\printbibliography[title={Bibliografía}]
 %\renewcommand{\appendixname}{Apéndice} %Lo que aparecerá en el titulo donde se ubica el apendice
 %\renewcommand{\appendixtocname}{Apéndices}%lo que aparecerá en la
 %\renewcommand{\appendixpagename}{Apéndices}

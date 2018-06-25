@@ -1,9 +1,32 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="14008000">
 	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
-	<Property Name="varPersistentID:{21A6E02C-8B4C-4B84-844C-DEEBD87F500C}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/A1L000001</Property>
-	<Property Name="varPersistentID:{B7DF4CA0-EE53-49D5-A0C5-E6705E2BF423}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/F300002</Property>
-	<Property Name="varPersistentID:{C1B707D1-481D-476F-AED9-5766F14D90F4}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/F300001</Property>
+	<Property Name="varPersistentID:{0E443F59-0623-4AFF-A1F5-77D1C36D2145}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300025</Property>
+	<Property Name="varPersistentID:{1EE8456C-CD4C-45DF-921F-BFE220ED0A23}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300022</Property>
+	<Property Name="varPersistentID:{2B0D3153-8168-436F-A74A-38ED09F12788}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300008</Property>
+	<Property Name="varPersistentID:{2CE19A60-B856-4613-9817-DE1937317830}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300038</Property>
+	<Property Name="varPersistentID:{2DF6881E-755E-4BB1-AC67-E0FE47A5F4F5}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300023</Property>
+	<Property Name="varPersistentID:{3D1A97D1-C70F-4263-8E34-9C63C69FBC13}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300014</Property>
+	<Property Name="varPersistentID:{403FB359-FDAA-49E4-898B-EDEFDBD51305}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300011</Property>
+	<Property Name="varPersistentID:{572C4AE7-105F-4DDA-9AB9-64213A3EA5AC}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300031</Property>
+	<Property Name="varPersistentID:{5B68D4D3-E9D8-44B5-99D4-FA1C0FC78BF6}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300001</Property>
+	<Property Name="varPersistentID:{600EAA94-DA36-4DBE-8518-2D7DB6B9E93F}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300017</Property>
+	<Property Name="varPersistentID:{68C25DE6-290C-478F-8A5F-5CFF4F7DE925}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300002</Property>
+	<Property Name="varPersistentID:{6A89CCE0-0786-4BB2-B89D-467D46A2385D}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300037</Property>
+	<Property Name="varPersistentID:{700D27A7-A24A-43AB-AD59-B41A2152CAFF}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300035</Property>
+	<Property Name="varPersistentID:{79288BF9-7597-41DA-9E91-9BFD37B31DC3}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300007</Property>
+	<Property Name="varPersistentID:{83F994D7-C70C-4A13-9D31-FF8B84798496}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300034</Property>
+	<Property Name="varPersistentID:{A36CC6A5-347E-4C98-889D-A5546DB26DFE}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300004</Property>
+	<Property Name="varPersistentID:{A71A8A36-C10A-4646-89CB-EDA2042CD67F}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300016</Property>
+	<Property Name="varPersistentID:{AECEFFAE-8805-4956-98C1-8933E6B9EC8D}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300020</Property>
+	<Property Name="varPersistentID:{C234A81F-21FE-43A9-8C66-6CF2F143F661}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300032</Property>
+	<Property Name="varPersistentID:{C2DD2F89-B0DB-4BB5-AADD-67C4A787FF0E}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300028</Property>
+	<Property Name="varPersistentID:{CA1429E0-0BE5-4AE7-B944-D0353CFB74E0}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300019</Property>
+	<Property Name="varPersistentID:{D4BD070D-4D56-4570-B628-CB2C1F649A36}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300026</Property>
+	<Property Name="varPersistentID:{D4C5C7B5-5C5A-48AA-879F-93559EA741F0}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300005</Property>
+	<Property Name="varPersistentID:{D8063DCA-585E-4ED4-B800-61F37E6F1E0C}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300029</Property>
+	<Property Name="varPersistentID:{E5036F91-04C9-41B9-8BE7-E7BD98A86004}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300013</Property>
+	<Property Name="varPersistentID:{EEC441B7-D99D-454F-BC7A-A07465AAAB86}" Type="Ref">/NI-myRIO-GSIEP/Modbus_myRIO.lvlib/D300010</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
@@ -1634,6 +1657,7 @@ AddOutputFilter chunkFilter
 		<Item Name="AlmacenamientoDatos.vi" Type="VI" URL="../AlmacenamientoDatos.vi"/>
 		<Item Name="Modbus_myRIO.lvlib" Type="Library" URL="../Modbus_myRIO.lvlib"/>
 		<Item Name="Comunicacion.vi" Type="VI" URL="../Comunicacion.vi"/>
+		<Item Name="Conversion_DBL-2INT.vi" Type="VI" URL="../../Computador_V1/Conversion_DBL-2INT.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Dynamic To Waveform Array.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Dynamic To Waveform Array.vi"/>
@@ -1725,13 +1749,12 @@ AddOutputFilter chunkFilter
 				<Item Name="ex_ExcelAdvancedConfig.ctl" Type="VI" URL="/&lt;vilib&gt;/express/express output/ExFileWriteBlock.llb/ex_ExcelAdvancedConfig.ctl"/>
 				<Item Name="ex_ExcelAllConfig.ctl" Type="VI" URL="/&lt;vilib&gt;/express/express output/ExFileWriteBlock.llb/ex_ExcelAllConfig.ctl"/>
 				<Item Name="ex_subExcelFileWrite.vi" Type="VI" URL="/&lt;vilib&gt;/express/express output/ExFileWriteBlock.llb/ex_subExcelFileWrite.vi"/>
-				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
-				<Item Name="Write To Spreadsheet File (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (string).vi"/>
-				<Item Name="Write To Spreadsheet File (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (I64).vi"/>
-				<Item Name="Write To Spreadsheet File (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (DBL).vi"/>
-				<Item Name="Write To Spreadsheet File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File.vi"/>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
